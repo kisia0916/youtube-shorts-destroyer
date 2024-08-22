@@ -1,0 +1,13 @@
+{
+    "name": "youtube-shorts-destroyer",
+    "version": "1.0.0",
+    "manifest_version": 3,
+    "description": "fuck youtube shorts",
+    "content_scripts": [{
+        "matches": ["https://www.youtube.com/*"],
+        "js": [
+          "content.js"
+        ]
+    }]
+  }
+  
