@@ -49,7 +49,7 @@ const observer = new MutationObserver(async()=>{
         watch_page()
         observer.observe(document.getElementById("content"), { childList: true, subtree: true })
         return
-    }else{
+    }else if(nowPath != window.location.href){
         nowPath = window.location.href
         observer.observe(document.getElementById("content"), { childList: true, subtree: true })
         return
